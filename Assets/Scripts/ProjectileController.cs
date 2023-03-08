@@ -9,4 +9,11 @@ public class ProjectileController : MonoBehaviour
     {
         Destroy(gameObject,5);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Inisde Projectile Controller");
+        Destroy(collision.gameObject);
+        Destroy(this.gameObject);
+    }
 }
