@@ -12,8 +12,10 @@ public class ProjectileController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("Inisde Projectile Controller");
-        Destroy(collision.gameObject);
-        Destroy(this.gameObject);
+        if (collision.gameObject.tag == "Enemy")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+        }
     }
 }

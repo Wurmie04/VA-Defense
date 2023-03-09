@@ -20,5 +20,17 @@ public class Enemy : MonoBehaviour
         //enemy will face and walk towards camera
         transform.position = Vector3.Lerp(transform.position, target.transform.position, moveSpeed);
         transform.LookAt(target.transform.position);
+
+        //need to add 
+        //stop when near player with attack animations
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Projectile")
+        {
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+            //add death animation
+        }
     }
 }
