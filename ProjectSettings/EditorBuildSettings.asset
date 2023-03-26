@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VA Defense.unity
     guid: d745f6bda91627a4dad8a4a9f38edf3e
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/SpeechRecognition/Scene/DemoScene.unity
+    guid: 882f9c9b0ccff4131aa9d59f08eeab9c
+  - enabled: 0
+    path: Assets/SpeechAndText/Sample/SampleSpeechToText.unity
+    guid: d9447599b4cad0245ac00fa552c354b6
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
