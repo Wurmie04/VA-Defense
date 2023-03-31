@@ -11,32 +11,26 @@ namespace BrainCheck
         public static Shoot Instance;
         public GameObject camera;
         public GameObject projectile;
-        public string textResult;
         public float shootForce;
-        public TMP_Text myText;
+        private string newMessage;
+        //public TMP_Text myText;
 
         void Awake()
         {
             Instance = this;
         }
+        //gets the message from the voice recording
         public void CallbackMethod(string messages)
         {
-            myText.text = messages;
-            /*if (messages.Equals("SpeechRecognitionFinished"))
+            newMessage = messages;
+
+            //if any part of the message contains shoot, then a ball will be shot out
+            if (newMessage.Contains("shoot"))
             {
-                myText.text = messages;
+                GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
+                newProjectile.transform.Rotate(0, 90, 0);
+                newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
             }
-            else
-            {
-                myText.text = messages;
-                myText.text = "";
-            }*/
-            //if(textResult == "shoot")
-            //{
-            //GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
-            //newProjectile.transform.Rotate(0, 90, 0);
-            //newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
-            //}
         }
     }
 }

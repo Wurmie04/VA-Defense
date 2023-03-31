@@ -2397,7 +2397,7 @@ GameObject:
   - component: {fileID: 5624510951403029134}
   - component: {fileID: 6418665262464819765}
   - component: {fileID: 5323214600064862398}
-  - component: {fileID: 6930391102898089095}
+  - component: {fileID: -2247587128728492866}
   m_Layer: 0
   m_Name: Zombie1
   m_TagString: Enemy
@@ -2465,7 +2465,9 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 77c3de37a980599489d5f7f009c186fd, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 77c3de37a980599489d5f7f009c186fd, type: 2}
+  - {fileID: 7400000, guid: de559bbb071ebfd40ab5af80881e75e8, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -2499,7 +2501,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6930391102898089095
+--- !u!114 &-2247587128728492866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2508,11 +2510,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7270996277694382872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9debe23e222ee4840822ea718ae7a76e, type: 3}
+  m_Script: {fileID: 11500000, guid: d06aea557d2c39c49a544190816df516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  moveSpeed: 0.002
+  moveSpeed: 0
 --- !u!1 &7519191399539389117
 GameObject:
   m_ObjectHideFlags: 0

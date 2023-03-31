@@ -2463,7 +2463,7 @@ GameObject:
   - component: {fileID: 5708307200772467024}
   - component: {fileID: 2098500529934886752}
   - component: {fileID: 7768317557809900789}
-  - component: {fileID: 4666251350824982352}
+  - component: {fileID: -8034745790992203709}
   m_Layer: 0
   m_Name: Ghoul
   m_TagString: Enemy
@@ -2542,7 +2542,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4666251350824982352
+--- !u!114 &-8034745790992203709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2551,11 +2551,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5674507505731864838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9debe23e222ee4840822ea718ae7a76e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5fdc486faad91cb408a14f60c8c29f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  moveSpeed: 0.002
+  moveSpeed: 0
 --- !u!1 &5674511057488152290
 GameObject:
   m_ObjectHideFlags: 0
