@@ -14,7 +14,7 @@ public class ProjectileController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
             Destroy(this.gameObject);
         }
     }
