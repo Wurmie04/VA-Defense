@@ -13,7 +13,7 @@ namespace BrainCheck
         public GameObject projectile;
         public float shootForce;
         private string newMessage;
-        //public TMP_Text myText;
+        public TMP_Text isRecordingText;
 
         void Awake()
         {
@@ -31,6 +31,7 @@ namespace BrainCheck
                 newProjectile.transform.Rotate(0, 90, 0);
                 newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
             }
+            isRecordingText.text = "Press To Record";
         }
     }
 }

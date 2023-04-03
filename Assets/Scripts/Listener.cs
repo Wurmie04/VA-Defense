@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using TMPro;
+using UnityEngine.Android;
 
 namespace BrainCheck
 {
@@ -13,11 +15,28 @@ namespace BrainCheck
         public GameObject camera;
         public GameObject projectile;
         public float shootForce;
+        public TMP_Text isRecordingText;
+
+        void Start()
+        {
+            BrainCheck.SpeechRecognitionBridge.setUnityGameObjectNameAndMethodName(gameObjectName, statusMethodName);
+            
+            //check for microphone access
+            if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+            {
+                Permission.RequestUserPermission(Permission.Microphone);
+            }
+        }
+
+        void Update()
+        {
+            //check if still recording
+        }
 
         public void startListening()
         {
-            BrainCheck.SpeechRecognitionBridge.setUnityGameObjectNameAndMethodName(gameObjectName, statusMethodName);
             BrainCheck.SpeechRecognitionBridge.speechToTextInHidenModeWithBeepSound();
+            isRecordingText.text = "Recording";
         }
 
         public void tempShootFunction()
