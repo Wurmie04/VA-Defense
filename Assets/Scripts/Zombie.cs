@@ -17,7 +17,7 @@ public class Zombie : MonoBehaviour
         target = GameObject.Find("CameraObject");
         animator = GetComponent<Animator>();
         animator.SetBool("startAttacking", false);
-        aggroRange = 1f;
+        aggroRange = 1.3f;
         moveSpeed = 0.0007f;
         isZombieDead = false;
     }

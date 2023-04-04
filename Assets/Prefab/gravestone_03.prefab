@@ -114,9 +114,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnList: []
-  GhoulToSpawn: {fileID: 5674507505731864838, guid: 227ee07e9e5b7914ba8fbb8f430be9a5,
+  GhoulToSpawn: {fileID: 8771629119840459575, guid: 15aa2e54591f07d46b09ae772c22c58e,
     type: 3}
-  ZombieToSpawn: {fileID: 7270996277694382872, guid: 6dc4cf4496348884d8ee27743ae38562,
+  ZombieToSpawn: {fileID: 3985244244248847141, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
     type: 3}
   spawnDelay: 6
 --- !u!54 &3394599251226663627

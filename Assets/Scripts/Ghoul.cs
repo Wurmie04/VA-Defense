@@ -14,7 +14,7 @@ public class Ghoul : MonoBehaviour
     {
         //finds the object attached to the camera
         target = GameObject.Find("CameraObject");
-        aggroRange = 0.8f;
+        aggroRange = 1.2f;
         moveSpeed = 0.002f;
         isDead = false;
     }
@@ -56,6 +56,10 @@ public class Ghoul : MonoBehaviour
             //Destroy(collision.gameObject);
             Destroy(this.gameObject, 1.1f);
 
+        }
+        if(collision.gameObject.tag == "MainCamera")
+        {
+            Debug.Log("Arms hit");
         }
     }
 }
