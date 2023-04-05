@@ -11,6 +11,7 @@ public class SpawnEnemy : MonoBehaviour
     public GameObject ZombieToSpawn;
     public float spawnDelay;
     private float nextSpawnTime;
+    private float spawnLocation;
 
     void Start()
     {
@@ -43,7 +44,10 @@ public class SpawnEnemy : MonoBehaviour
         nextSpawnTime = Time.time + spawnDelay;
         //randomize which enemy should be spawned
         int randomNumber = Random.Range(0, spawnList.Count);
+        spawnLocation = Random.Range(-10, 10);
+        Debug.Log(spawnLocation);
         //create the enemy
-        Instantiate(spawnList[randomNumber], transform.position, transform.rotation);
+        //Instantiate(spawnList[randomNumber], transform.position, transform.rotation);
+        Instantiate(spawnList[randomNumber], transform.position + new Vector3(spawnLocation,0,0), transform.rotation);
     }
 }

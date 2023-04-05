@@ -17,7 +17,10 @@ public class PlayerLifePoints : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(lifePoints == 0)
+        {
+            lifePointsText.text = "Game Over";
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
