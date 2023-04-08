@@ -793,7 +793,17 @@ extern void PermissionCallbacks_onPermissionGranted_m723440705B5B21B97AF52067162
 extern void PermissionCallbacks_onPermissionDenied_m0E05122B560DD62BB38178EE601E65854017980A (void);
 // 0x00000193 System.Void UnityEngine.Android.PermissionCallbacks::onPermissionDeniedAndDontAskAgain(System.String)
 extern void PermissionCallbacks_onPermissionDeniedAndDontAskAgain_m1191CF6422AFD8E8FE7BDBDBC04721D63718A5D9 (void);
-static Il2CppMethodPointer s_methodPointers[403] = 
+// 0x00000194 UnityEngine.AndroidJavaObject UnityEngine.Android.Permission::GetActivity()
+extern void Permission_GetActivity_mB826613D19EC4BADCAA411A99D2D1B10FEC65153 (void);
+// 0x00000195 UnityEngine.AndroidJavaObject UnityEngine.Android.Permission::GetUnityPermissions()
+extern void Permission_GetUnityPermissions_m6A22A923A8B036209E6218E24F7AA8CA79AA15BD (void);
+// 0x00000196 System.Boolean UnityEngine.Android.Permission::HasUserAuthorizedPermission(System.String)
+extern void Permission_HasUserAuthorizedPermission_mF4C90E13124E28F6F672200E489CC25A9B645B8B (void);
+// 0x00000197 System.Void UnityEngine.Android.Permission::RequestUserPermission(System.String)
+extern void Permission_RequestUserPermission_mF9CF3A21AAF34B311137C4D00B3AD6A6C2694242 (void);
+// 0x00000198 System.Void UnityEngine.Android.Permission::RequestUserPermissions(System.String[],UnityEngine.Android.PermissionCallbacks)
+extern void Permission_RequestUserPermissions_m09FE74BF5829C8B48A0E6C9B7F7846FEE763D2DA (void);
+static Il2CppMethodPointer s_methodPointers[408] = 
 {
 	AndroidJNISafe_CheckException_m465A2955F921417ED62C035390E550889E93F8DC,
 	AndroidJNISafe_DeleteGlobalRef_mD4ECCC474E98F40B65184E138EF9D84A4F4AAAA0,
@@ -1198,8 +1208,13 @@ static Il2CppMethodPointer s_methodPointers[403] =
 	PermissionCallbacks_onPermissionGranted_m723440705B5B21B97AF5206716275BAE2A122E3C,
 	PermissionCallbacks_onPermissionDenied_m0E05122B560DD62BB38178EE601E65854017980A,
 	PermissionCallbacks_onPermissionDeniedAndDontAskAgain_m1191CF6422AFD8E8FE7BDBDBC04721D63718A5D9,
+	Permission_GetActivity_mB826613D19EC4BADCAA411A99D2D1B10FEC65153,
+	Permission_GetUnityPermissions_m6A22A923A8B036209E6218E24F7AA8CA79AA15BD,
+	Permission_HasUserAuthorizedPermission_mF4C90E13124E28F6F672200E489CC25A9B645B8B,
+	Permission_RequestUserPermission_mF9CF3A21AAF34B311137C4D00B3AD6A6C2694242,
+	Permission_RequestUserPermissions_m09FE74BF5829C8B48A0E6C9B7F7846FEE763D2DA,
 };
-static const int32_t s_InvokerIndices[403] = 
+static const int32_t s_InvokerIndices[408] = 
 {
 	8674,
 	8483,
@@ -1604,6 +1619,11 @@ static const int32_t s_InvokerIndices[403] =
 	4387,
 	4387,
 	4387,
+	8635,
+	8635,
+	8095,
+	8485,
+	7842,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[23] = 
 {
@@ -1720,7 +1740,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule = 
 {
 	"UnityEngine.AndroidJNIModule.dll",
-	403,
+	408,
 	s_methodPointers,
 	0,
 	NULL,

@@ -18,7 +18,7 @@ public class Zombie : MonoBehaviour
         animator = GetComponent<Animator>();
         animator.SetBool("startAttacking", false);
         aggroRange = 1.3f;
-        moveSpeed = 0.0007f;
+        moveSpeed = 0.001f;
         isZombieDead = false;
     }
 

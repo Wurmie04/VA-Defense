@@ -25,7 +25,7 @@ public class PlayerLifePoints : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && lifePoints > 0)
         {
             lifePoints -= 1;
             lifePointsText.text = "Life Points: " + lifePoints.ToString();

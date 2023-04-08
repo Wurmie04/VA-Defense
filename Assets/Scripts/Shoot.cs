@@ -14,6 +14,7 @@ namespace BrainCheck
         public float shootForce;
         private string newMessage;
         public TMP_Text isRecordingText;
+        private string tempMessage;
 
         void Awake()
         {
@@ -22,16 +23,30 @@ namespace BrainCheck
         //gets the message from the voice recording
         public void CallbackMethod(string messages)
         {
-            newMessage = messages;
+            tempMessage = messages;
+            
+            //wait till entire message is finished
+            if(tempMessage == "SpeechRecognitionFinished")
+            {
+                fireAbility(newMessage);
+            }
+            else
+            {
+                newMessage = messages;
+            }
+        }
 
-            //if any part of the message contains shoot, then a ball will be shot out
-            if (newMessage.Contains("shoot"))
+        //fires the ability that was said in final string
+        public void fireAbility(string messages)
+        {
+            //isRecordingText.text = newMessage;
+            if (messages.Contains("shoot"))
             {
                 GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
-                newProjectile.transform.Rotate(0, 90, 0);
+                //newProjectile.transform.Rotate(0, 90, 0);
                 newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
             }
-            isRecordingText.text = "Press To Record";
+            isRecordingText.text = "Press to Record";
         }
     }
 }

@@ -31,18 +31,20 @@ namespace BrainCheck
         void Update()
         {
             //check if still recording
+            
         }
 
         public void startListening()
         {
             BrainCheck.SpeechRecognitionBridge.speechToTextInHidenModeWithBeepSound();
+            //BrainCheck.SpeechRecognitionBridge.speechToText();
             isRecordingText.text = "Recording";
         }
 
         public void tempShootFunction()
         {
             GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
-            newProjectile.transform.Rotate(0, 90, 0);
+            //newProjectile.transform.Rotate(0, 90, 0);
             newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
         }
     }

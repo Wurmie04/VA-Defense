@@ -40,16 +40,17 @@ public class PlaceObject : MonoBehaviour
             return;
 
         //place object
-        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, 
-            TrackableType.PlaneWithinPolygon)){
+        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon))
+        {
             foreach(ARRaycastHit hit in hits)
             {
                 Pose pose = hit.pose;
-                GameObject obj = Instantiate(prefab, pose.position, pose.rotation);
-
-                //turn enemy towards camera
-                if(aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
+                //check if it is the ground and not the ceiling
+                if (aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
                 {
+                    GameObject obj = Instantiate(prefab, pose.position, pose.rotation);
+
+                    //turn enemy towards camera
                     Vector3 position = obj.transform.position;
                     Vector3 cameraPosition = Camera.main.transform.position;
                     Vector3 direction = cameraPosition - position;
@@ -58,6 +59,7 @@ public class PlaceObject : MonoBehaviour
                     Quaternion targetRotation = Quaternion.Euler(scaledEuler);
                     obj.transform.rotation = obj.transform.rotation * targetRotation;
                 }
+            
             }
         }
     }

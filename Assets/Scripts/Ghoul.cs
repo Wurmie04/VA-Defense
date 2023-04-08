@@ -15,7 +15,7 @@ public class Ghoul : MonoBehaviour
         //finds the object attached to the camera
         target = GameObject.Find("CameraObject");
         aggroRange = 1.2f;
-        moveSpeed = 0.002f;
+        moveSpeed = 0.005f;
         isDead = false;
     }
 
