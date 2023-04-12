@@ -15953,14 +15953,18 @@ struct OpenXRRestarter_t59BB3482FA6ED413E66F91ABE39820D83AAE8AA1  : public MonoB
 // PlaceObject
 struct PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.UI.Button PlaceObject::recordingButton
+	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___recordingButton_4;
+	// System.Boolean PlaceObject::pointerOverUI
+	bool ___pointerOverUI_5;
 	// UnityEngine.GameObject PlaceObject::prefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab_4;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___prefab_6;
 	// UnityEngine.XR.ARFoundation.ARRaycastManager PlaceObject::aRRaycastManager
-	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___aRRaycastManager_5;
+	ARRaycastManager_tD9459374F0F5BD9E2E4A8A1C665E7F33F9C2EE44* ___aRRaycastManager_7;
 	// UnityEngine.XR.ARFoundation.ARPlaneManager PlaceObject::aRPlaneManager
-	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___aRPlaneManager_6;
+	ARPlaneManager_t9DA6C512BDCFFBEE8B3DAA7170EB3BFFDE26A928* ___aRPlaneManager_8;
 	// System.Collections.Generic.List`1<UnityEngine.XR.ARFoundation.ARRaycastHit> PlaceObject::hits
-	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___hits_7;
+	List_1_t0754071572EFE7A5C92A59495D2524FC935364E3* ___hits_9;
 };
 
 // PlayerLifePoints
@@ -26091,9 +26095,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4513[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4514[4] = 
 {
 	static_cast<int32_t>(offsetof(Ghoul_tA980E68A0C8CBDD33B7997653B11CA193685F8E1, ___target_4)),static_cast<int32_t>(offsetof(Ghoul_tA980E68A0C8CBDD33B7997653B11CA193685F8E1, ___moveSpeed_5)),static_cast<int32_t>(offsetof(Ghoul_tA980E68A0C8CBDD33B7997653B11CA193685F8E1, ___aggroRange_6)),static_cast<int32_t>(offsetof(Ghoul_tA980E68A0C8CBDD33B7997653B11CA193685F8E1, ___isDead_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4515[4] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4515[6] = 
 {
-	static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___prefab_4)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___aRRaycastManager_5)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___aRPlaneManager_6)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___hits_7)),};
+	static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___recordingButton_4)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___pointerOverUI_5)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___prefab_6)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___aRRaycastManager_7)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___aRPlaneManager_8)),static_cast<int32_t>(offsetof(PlaceObject_t69096E71B3AF67B110DC0077487F0BBDB8D9E1BF, ___hits_9)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable4516[2] = 
 {
 	static_cast<int32_t>(offsetof(PlayerLifePoints_tCBF5BCB8989FDB4FF14A6BEC870A4E0111FA441D, ___lifePointsText_4)),static_cast<int32_t>(offsetof(PlayerLifePoints_tCBF5BCB8989FDB4FF14A6BEC870A4E0111FA441D, ___lifePoints_5)),};

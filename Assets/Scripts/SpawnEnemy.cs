@@ -44,7 +44,7 @@ public class SpawnEnemy : MonoBehaviour
         nextSpawnTime = Time.time + spawnDelay;
         //randomize which enemy should be spawned
         int randomNumber = Random.Range(0, spawnList.Count);
-        spawnLocation = Random.Range(-5, 5);
+        spawnLocation = Random.Range(-3, 3);
         Debug.Log(spawnLocation);
         //create the enemy
         //Instantiate(spawnList[randomNumber], transform.position, transform.rotation);

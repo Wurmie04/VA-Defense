@@ -1130,9 +1130,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 216303289}
-  projectile: {fileID: 777766661574462002, guid: 4c9ceaa120feaf54e9d56dce5cdc6b6b,
+  projectile: {fileID: 2294533656584915533, guid: f19bbce23decf7745ad5bf8560132f7b,
     type: 3}
-  shootForce: 1000
+  shootForce: 700
   isRecordingText: {fileID: 903975315}
 --- !u!1 &1409559705
 GameObject:
@@ -1161,7 +1161,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409559705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 50}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1220,7 +1220,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2077516962}
         m_TargetAssemblyTypeName: BrainCheck.Listener, Assembly-CSharp
-        m_MethodName: startListening
+        m_MethodName: tempShootFunction
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1368,6 +1368,75 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1001 &1511630195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3985244244248847141, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_Name
+      value: Zombie1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae, type: 3}
 --- !u!1 &1639363122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,7 +1635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 216303289}
-  projectile: {fileID: 777766661574462002, guid: 4c9ceaa120feaf54e9d56dce5cdc6b6b,
+  projectile: {fileID: 2294533656584915533, guid: f19bbce23decf7745ad5bf8560132f7b,
     type: 3}
   shootForce: 1000
   isRecordingText: {fileID: 903975315}

@@ -16,6 +16,11 @@ namespace BrainCheck
         public TMP_Text isRecordingText;
         private string tempMessage;
 
+        void Start()
+        {
+            shootForce = 0;
+        }
+
         void Awake()
         {
             Instance = this;
@@ -42,6 +47,7 @@ namespace BrainCheck
             //isRecordingText.text = newMessage;
             if (messages.Contains("shoot"))
             {
+                shootForce = 700;
                 GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
                 //newProjectile.transform.Rotate(0, 90, 0);
                 newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);

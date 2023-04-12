@@ -1,17 +1,25 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 using EnhancedTouch = UnityEngine.InputSystem.EnhancedTouch;
+using UnityEngine.EventSystems;
 
 public class PlaceObject : MonoBehaviour
 {
-    [SerializeField]
+     [SerializeField]
     private GameObject prefab;
 
     private ARRaycastManager aRRaycastManager;
     private ARPlaneManager aRPlaneManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
+
+    void Update()
+    {
+
+    }
 
     private void Awake()
     {
@@ -36,11 +44,12 @@ public class PlaceObject : MonoBehaviour
     //what happens when screen is touched
     private void FingerDown(EnhancedTouch.Finger finger)
     {
+        //no multi-touch
         if(finger.index != 0)
             return;
 
         //place object
-        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon))
+        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon) && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
         {
             foreach(ARRaycastHit hit in hits)
             {
