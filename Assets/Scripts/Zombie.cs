@@ -60,4 +60,14 @@ public class Zombie : MonoBehaviour
             Destroy(this.gameObject,1.5f);
         }
     }
+    private void OnParticleCollision(GameObject other)
+    {
+        if(other.tag == "Projectile")
+        {
+            Debug.Log("ICe");
+            animator.SetBool("isDeadZombie", true);
+            isZombieDead = true;
+            Destroy(this.gameObject, 1.5f);
+        }
+    }
 }

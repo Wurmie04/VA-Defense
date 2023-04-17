@@ -43,7 +43,7 @@ namespace BrainCheck
 
         public void tempShootFunction()
         {
-            GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
+            GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position + new Vector3(0, 0, 0.7f), camera.transform.rotation);
             //newProjectile.transform.Rotate(0, 90, 0);
             newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
         }

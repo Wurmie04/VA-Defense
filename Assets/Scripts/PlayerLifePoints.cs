@@ -29,7 +29,6 @@ public class PlayerLifePoints : MonoBehaviour
         {
             lifePoints -= 1;
             lifePointsText.text = "Life Points: " + lifePoints.ToString();
-            Debug.Log("Hit");
             //Destroy(this.gameObject, 1.5f);
         }
     }

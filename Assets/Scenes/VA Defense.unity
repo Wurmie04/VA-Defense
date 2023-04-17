@@ -1132,7 +1132,12 @@ MonoBehaviour:
   camera: {fileID: 216303289}
   projectile: {fileID: 2294533656584915533, guid: f19bbce23decf7745ad5bf8560132f7b,
     type: 3}
-  shootForce: 700
+  fireball_Projectile: {fileID: 3352219754825387766, guid: f19bbce23decf7745ad5bf8560132f7b,
+    type: 3}
+  flamethrower_Projectile: {fileID: 3504363851899838446, guid: f36f1316ba757074ea008a99957366c1,
+    type: 3}
+  EnergyBall_Projectile: {fileID: 7573389883615210611, guid: 4085b416a9fb7ef46b774b8d955ad546,
+    type: 3}
   isRecordingText: {fileID: 903975315}
 --- !u!1 &1409559705
 GameObject:
@@ -1368,75 +1373,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1001 &1511630195
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3985244244248847141, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_Name
-      value: Zombie1 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6421254152841744309, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3fa87a7f79b8f024bbeccbf9e9dc59ae, type: 3}
 --- !u!1 &1639363122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,9 +1571,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 216303289}
-  projectile: {fileID: 2294533656584915533, guid: f19bbce23decf7745ad5bf8560132f7b,
+  projectile: {fileID: 7573389883615210611, guid: 4085b416a9fb7ef46b774b8d955ad546,
     type: 3}
-  shootForce: 1000
+  shootForce: 100
   isRecordingText: {fileID: 903975315}
 --- !u!4 &2077516963
 Transform:

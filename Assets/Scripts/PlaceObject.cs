@@ -49,14 +49,19 @@ public class PlaceObject : MonoBehaviour
             return;
 
         //place object
-        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon) && !EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+        if(aRRaycastManager.Raycast(finger.currentTouch.screenPosition, hits, TrackableType.PlaneWithinPolygon))
         {
             foreach(ARRaycastHit hit in hits)
             {
                 Pose pose = hit.pose;
+                //pass the hit into event system to check if UI
+                //!EventSystem.current.IsPointerOverGameObject(pose)... maybe. i'll try
                 //check if it is the ground and not the ceiling
                 if (aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
                 {
+                    //check if too many are already placed
+
+                    //place object
                     GameObject obj = Instantiate(prefab, pose.position, pose.rotation);
 
                     //turn enemy towards camera
