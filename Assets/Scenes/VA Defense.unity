@@ -1130,8 +1130,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 216303289}
-  projectile: {fileID: 2294533656584915533, guid: f19bbce23decf7745ad5bf8560132f7b,
-    type: 3}
   fireball_Projectile: {fileID: 3352219754825387766, guid: f19bbce23decf7745ad5bf8560132f7b,
     type: 3}
   flamethrower_Projectile: {fileID: 3504363851899838446, guid: f36f1316ba757074ea008a99957366c1,
@@ -1225,7 +1223,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2077516962}
         m_TargetAssemblyTypeName: BrainCheck.Listener, Assembly-CSharp
-        m_MethodName: tempShootFunction
+        m_MethodName: startListening
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1571,7 +1569,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 216303289}
-  projectile: {fileID: 7573389883615210611, guid: 4085b416a9fb7ef46b774b8d955ad546,
+  projectile: {fileID: 3504363851899838446, guid: f36f1316ba757074ea008a99957366c1,
     type: 3}
   shootForce: 100
   isRecordingText: {fileID: 903975315}
@@ -1613,7 +1611,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2130331796}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.7199998, y: 0.6739681, z: 2.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

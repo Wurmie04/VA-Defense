@@ -52,169 +52,197 @@ extern void Enemy_Update_m4149CFC3AC081AF0D654D9BDB6BC9B5540CE03D8 (void);
 extern void Enemy_OnCollisionEnter_mA8E3F644B8068B1BA5496C6AD2E43A65EBA978DB (void);
 // 0x00000014 System.Void Enemy::.ctor()
 extern void Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933 (void);
-// 0x00000015 System.Void Ghoul::Start()
+// 0x00000015 System.Void EnergyBall_Controller::Start()
+extern void EnergyBall_Controller_Start_m6B7BFCBFFE9F469E859D714FC1F0D57F58B7B4D7 (void);
+// 0x00000016 System.Void EnergyBall_Controller::.ctor()
+extern void EnergyBall_Controller__ctor_m12A265A5030AF3D4F8FDD108C880A0417F9E4444 (void);
+// 0x00000017 System.Void Fireball_Controller::Start()
+extern void Fireball_Controller_Start_m80E143915B85DABDA415B28D93675162051C1850 (void);
+// 0x00000018 System.Void Fireball_Controller::OnParticleCollision(UnityEngine.GameObject)
+extern void Fireball_Controller_OnParticleCollision_m6BC32CDD4548082B7AC07A1F450DD0F6D92C51CB (void);
+// 0x00000019 System.Void Fireball_Controller::.ctor()
+extern void Fireball_Controller__ctor_mC56EF7C1424A424E94587F24E5070AD3CD0F4BAC (void);
+// 0x0000001A System.Void Flamethrower_Controller::Start()
+extern void Flamethrower_Controller_Start_m06AC7649490362D7993994B8542E033D4406F3EC (void);
+// 0x0000001B System.Void Flamethrower_Controller::.ctor()
+extern void Flamethrower_Controller__ctor_mD2CD174AED2C1703DAAEE79A9CDB5FEE5E154117 (void);
+// 0x0000001C System.Void Ghoul::Start()
 extern void Ghoul_Start_m9993A5388BCE161825471078E3DB434BBF6CA556 (void);
-// 0x00000016 System.Void Ghoul::Update()
+// 0x0000001D System.Void Ghoul::Update()
 extern void Ghoul_Update_mC96FD17EF1C78643867E8F1CD48BF03F96DFEE12 (void);
-// 0x00000017 System.Void Ghoul::OnCollisionEnter(UnityEngine.Collision)
+// 0x0000001E System.Void Ghoul::OnCollisionEnter(UnityEngine.Collision)
 extern void Ghoul_OnCollisionEnter_m3B01F2D6CA680F34B4069637E796302DFC90A542 (void);
-// 0x00000018 System.Void Ghoul::.ctor()
+// 0x0000001F System.Void Ghoul::.ctor()
 extern void Ghoul__ctor_mA673771558EE8B05B7EDFCBF2B70E231CA41B190 (void);
-// 0x00000019 System.Void PlaceObject::Update()
+// 0x00000020 System.Void NavigationBaker::Start()
+extern void NavigationBaker_Start_m0475BE8421CEB29696195846DAE3AD17ACC226E2 (void);
+// 0x00000021 System.Void NavigationBaker::Update()
+extern void NavigationBaker_Update_m647E8D45CF2FB5EDC10662BA1164B00DF74EEDC7 (void);
+// 0x00000022 System.Void NavigationBaker::.ctor()
+extern void NavigationBaker__ctor_m61CA349A592C2057F86B9FE91B8CEFAEAB2D2E45 (void);
+// 0x00000023 System.Void PlaceObject::Start()
+extern void PlaceObject_Start_mE0F46F0353CD0065F35D9EEF88BF361EE12DD951 (void);
+// 0x00000024 System.Void PlaceObject::Update()
 extern void PlaceObject_Update_mE52445879BBA344DEBFEDBF6CF23FEE92A059358 (void);
-// 0x0000001A System.Void PlaceObject::Awake()
+// 0x00000025 System.Void PlaceObject::Awake()
 extern void PlaceObject_Awake_mD6993E74BE76ED7E3B9AAA189F1B37638B7D2E70 (void);
-// 0x0000001B System.Void PlaceObject::OnEnable()
+// 0x00000026 System.Void PlaceObject::OnEnable()
 extern void PlaceObject_OnEnable_mB3104C829382C28FD236E0635DD37DC931A2F3EC (void);
-// 0x0000001C System.Void PlaceObject::OnDisable()
+// 0x00000027 System.Void PlaceObject::OnDisable()
 extern void PlaceObject_OnDisable_m4538A06E715E9ADB0910F24DA7BC187D3C6474F1 (void);
-// 0x0000001D System.Void PlaceObject::FingerDown(UnityEngine.InputSystem.EnhancedTouch.Finger)
+// 0x00000028 System.Void PlaceObject::FingerDown(UnityEngine.InputSystem.EnhancedTouch.Finger)
 extern void PlaceObject_FingerDown_m8F45C6F6D5360556C0854AAA70419FB18BFE1FA9 (void);
-// 0x0000001E System.Void PlaceObject::.ctor()
+// 0x00000029 System.Void PlaceObject::.ctor()
 extern void PlaceObject__ctor_m73094142430E3C4071B1660682AB5867522D1510 (void);
-// 0x0000001F System.Void PlayerLifePoints::Start()
+// 0x0000002A System.Void PlayerLifePoints::Start()
 extern void PlayerLifePoints_Start_m580DAE0A54BFBF9A6537FE774A93FCE09EEDC865 (void);
-// 0x00000020 System.Void PlayerLifePoints::Update()
+// 0x0000002B System.Void PlayerLifePoints::Update()
 extern void PlayerLifePoints_Update_mF2AA45EDAACCFFF788D15C40D7E042F3F76B5400 (void);
-// 0x00000021 System.Void PlayerLifePoints::OnCollisionEnter(UnityEngine.Collision)
+// 0x0000002C System.Void PlayerLifePoints::OnCollisionEnter(UnityEngine.Collision)
 extern void PlayerLifePoints_OnCollisionEnter_m494F37A629D18912F8409B9B2EC4C5FDE516B699 (void);
-// 0x00000022 System.Void PlayerLifePoints::.ctor()
+// 0x0000002D System.Void PlayerLifePoints::.ctor()
 extern void PlayerLifePoints__ctor_m80F053C640BB110F8DC82D0CD5CD282312D00EEE (void);
-// 0x00000023 System.Void ProjectileController::Start()
+// 0x0000002E System.Void ProjectileController::Start()
 extern void ProjectileController_Start_mC8286D6B48220A4E8A284879C39F93F4F033A213 (void);
-// 0x00000024 System.Void ProjectileController::OnCollisionEnter(UnityEngine.Collision)
+// 0x0000002F System.Void ProjectileController::OnCollisionEnter(UnityEngine.Collision)
 extern void ProjectileController_OnCollisionEnter_m820941CF79CE45D73F608CBDA16645A5FA2A3C74 (void);
-// 0x00000025 System.Void ProjectileController::.ctor()
+// 0x00000030 System.Void ProjectileController::.ctor()
 extern void ProjectileController__ctor_mB1B701C69DFB3576EAE38B3B962C26C6E5AE2E38 (void);
-// 0x00000026 System.Void SpawnEnemy::Start()
+// 0x00000031 System.Void SpawnEnemy::Start()
 extern void SpawnEnemy_Start_mC7726203354D875E8F7DBF2A39480C6F312BF75B (void);
-// 0x00000027 System.Void SpawnEnemy::Update()
+// 0x00000032 System.Void SpawnEnemy::Update()
 extern void SpawnEnemy_Update_m8C17771352CA43D1CE958B5B5D5A151C0BBBB35F (void);
-// 0x00000028 System.Boolean SpawnEnemy::shouldSpawn()
+// 0x00000033 System.Boolean SpawnEnemy::shouldSpawn()
 extern void SpawnEnemy_shouldSpawn_m8B33652AD0E84F7C80A579DAC51908C6A5F6EE6A (void);
-// 0x00000029 System.Void SpawnEnemy::Spawn()
+// 0x00000034 System.Void SpawnEnemy::Spawn()
 extern void SpawnEnemy_Spawn_m0EC06F49B42CEDCFBB717E7CF54250DC4ACF7C06 (void);
-// 0x0000002A System.Void SpawnEnemy::.ctor()
+// 0x00000035 System.Void SpawnEnemy::.ctor()
 extern void SpawnEnemy__ctor_mF4ACB2F1D347568304B1A0FE83882EB99DCECA57 (void);
-// 0x0000002B System.Void Zombie::Start()
+// 0x00000036 System.Void Zombie::Start()
 extern void Zombie_Start_m478D7F11289A1F406964DA248134532441D4E52E (void);
-// 0x0000002C System.Void Zombie::Update()
+// 0x00000037 System.Void Zombie::Update()
 extern void Zombie_Update_mB7E693A8605FDC1236C6FD956989A0454234B0F3 (void);
-// 0x0000002D System.Void Zombie::OnCollisionEnter(UnityEngine.Collision)
+// 0x00000038 System.Void Zombie::OnCollisionEnter(UnityEngine.Collision)
 extern void Zombie_OnCollisionEnter_m791922AAEAC2327576775C67F34643260100406B (void);
-// 0x0000002E System.Void Zombie::.ctor()
+// 0x00000039 System.Void Zombie::OnParticleCollision(UnityEngine.GameObject)
+extern void Zombie_OnParticleCollision_m011041B1CF26A869BBB794D0615C9363398D35FF (void);
+// 0x0000003A System.Void Zombie::.ctor()
 extern void Zombie__ctor_m3CA658C4BC347F71B7C6F90172F19865934C9D31 (void);
-// 0x0000002F System.Void Visyde.V_SMC_Camera::Start()
+// 0x0000003B System.Void Visyde.V_SMC_Camera::Start()
 extern void V_SMC_Camera_Start_m042D7339C7EEC60EE95207A6D609899101D45C2C (void);
-// 0x00000030 System.Void Visyde.V_SMC_Camera::Update()
+// 0x0000003C System.Void Visyde.V_SMC_Camera::Update()
 extern void V_SMC_Camera_Update_m5A20B03D75E774E4ECAC49DBA2F39D54126BBC03 (void);
-// 0x00000031 System.Void Visyde.V_SMC_Camera::Hit()
+// 0x0000003D System.Void Visyde.V_SMC_Camera::Hit()
 extern void V_SMC_Camera_Hit_mE986E80AE7401BC7A6F29978D9230668F11608BF (void);
-// 0x00000032 System.Void Visyde.V_SMC_Camera::.ctor()
+// 0x0000003E System.Void Visyde.V_SMC_Camera::.ctor()
 extern void V_SMC_Camera__ctor_mE811C23268506BC66AEBEE61C61137702CDC9514 (void);
-// 0x00000033 System.Void Visyde.V_SMC_Handler::Update()
+// 0x0000003F System.Void Visyde.V_SMC_Handler::Update()
 extern void V_SMC_Handler_Update_m091367E6AD7F4CE60C83EEADF5B8F9662D3FA617 (void);
-// 0x00000034 System.Void Visyde.V_SMC_Handler::ChangeColor(UnityEngine.Color)
+// 0x00000040 System.Void Visyde.V_SMC_Handler::ChangeColor(UnityEngine.Color)
 extern void V_SMC_Handler_ChangeColor_mF51F82A467A9665B665D0E30D181DEF0437E8F44 (void);
-// 0x00000035 System.Void Visyde.V_SMC_Handler::.ctor()
+// 0x00000041 System.Void Visyde.V_SMC_Handler::.ctor()
 extern void V_SMC_Handler__ctor_m1F885D36D860D8D5C935068A1FE61D4CB4F208A2 (void);
-// 0x00000036 System.Void Visyde.V_Text::Start()
+// 0x00000042 System.Void Visyde.V_Text::Start()
 extern void V_Text_Start_m5367B83B14F3976D3BD76CD4773BE9E98B166809 (void);
-// 0x00000037 System.Void Visyde.V_Text::Update()
+// 0x00000043 System.Void Visyde.V_Text::Update()
 extern void V_Text_Update_m26A0479BB72DB68637513A87F3F44449E496ECB7 (void);
-// 0x00000038 System.Void Visyde.V_Text::.ctor()
+// 0x00000044 System.Void Visyde.V_Text::.ctor()
 extern void V_Text__ctor_m4B475C1C417E68F3B67AC2AE7F20E102F3E33340 (void);
-// 0x00000039 System.Void BrainCheck.Listener::Start()
+// 0x00000045 System.Void BrainCheck.Listener::Start()
 extern void Listener_Start_mEA56F7DC2CAE6C80776AA93EB20AABE97149A366 (void);
-// 0x0000003A System.Void BrainCheck.Listener::Update()
+// 0x00000046 System.Void BrainCheck.Listener::Update()
 extern void Listener_Update_m872C93123C467E7E4E9D2806EC57F6BE791EDE5B (void);
-// 0x0000003B System.Void BrainCheck.Listener::startListening()
+// 0x00000047 System.Void BrainCheck.Listener::startListening()
 extern void Listener_startListening_m10E63A551FF8A23E10C87DE44DC23725C6A17978 (void);
-// 0x0000003C System.Void BrainCheck.Listener::tempShootFunction()
+// 0x00000048 System.Void BrainCheck.Listener::tempShootFunction()
 extern void Listener_tempShootFunction_mABCD98E8383239AD248D0F7649175F2C6CF36AC3 (void);
-// 0x0000003D System.Void BrainCheck.Listener::.ctor()
+// 0x00000049 System.Void BrainCheck.Listener::.ctor()
 extern void Listener__ctor_mE9DDEC9431D28F3493756F0E3F47FA520540EFE8 (void);
-// 0x0000003E System.Void BrainCheck.Shoot::Awake()
+// 0x0000004A System.Void BrainCheck.Shoot::Start()
+extern void Shoot_Start_mF25A91B2CD53E93632C458EFD4ED52FF68F57791 (void);
+// 0x0000004B System.Void BrainCheck.Shoot::Update()
+extern void Shoot_Update_mF8445D1D88C6C251A543B67FEF02DF16EE5FFD94 (void);
+// 0x0000004C System.Void BrainCheck.Shoot::Awake()
 extern void Shoot_Awake_m0DB64BED598C905B36D7234B0C094DA425635CEB (void);
-// 0x0000003F System.Void BrainCheck.Shoot::CallbackMethod(System.String)
+// 0x0000004D System.Void BrainCheck.Shoot::CallbackMethod(System.String)
 extern void Shoot_CallbackMethod_mA7A829982E8A013DA52C13042F38C773BEE8FD9A (void);
-// 0x00000040 System.Void BrainCheck.Shoot::fireAbility(System.String)
+// 0x0000004E System.Void BrainCheck.Shoot::fireAbility(System.String)
 extern void Shoot_fireAbility_m41AB79FE96CAE4477EC3E70972B0935B482310D6 (void);
-// 0x00000041 System.Void BrainCheck.Shoot::.ctor()
+// 0x0000004F System.Void BrainCheck.Shoot::.ctor()
 extern void Shoot__ctor_m74E1CE51CCC5028561F79B115A8F182A3DC5DB1C (void);
-// 0x00000042 UnityEngine.AndroidJavaObject BrainCheck.SpeechRecognitionBridge::get_instance()
+// 0x00000050 UnityEngine.AndroidJavaObject BrainCheck.SpeechRecognitionBridge::get_instance()
 extern void SpeechRecognitionBridge_get_instance_m905D985AFF7961875660AA672BE0AB6BF31BF4C9 (void);
-// 0x00000043 System.Void BrainCheck.SpeechRecognitionBridge::SetupPlugin()
+// 0x00000051 System.Void BrainCheck.SpeechRecognitionBridge::SetupPlugin()
 extern void SpeechRecognitionBridge_SetupPlugin_m6BE836CBC656FA4B3554DB7EA81584A305158390 (void);
-// 0x00000044 System.Void BrainCheck.SpeechRecognitionBridge::requestMicPermission()
+// 0x00000052 System.Void BrainCheck.SpeechRecognitionBridge::requestMicPermission()
 extern void SpeechRecognitionBridge_requestMicPermission_m10B6678DF52F29AFF1166CBEC61268B3D861CC7A (void);
-// 0x00000045 System.Void BrainCheck.SpeechRecognitionBridge::checkMicPermission()
+// 0x00000053 System.Void BrainCheck.SpeechRecognitionBridge::checkMicPermission()
 extern void SpeechRecognitionBridge_checkMicPermission_mD5FB4DFB3DBB7F371018B863C473DB6A971F4188 (void);
-// 0x00000046 System.Void BrainCheck.SpeechRecognitionBridge::textToSpeech(System.String,System.Int32)
+// 0x00000054 System.Void BrainCheck.SpeechRecognitionBridge::textToSpeech(System.String,System.Int32)
 extern void SpeechRecognitionBridge_textToSpeech_mDB5FDACC7FE6B3DA5C483954FE5CAC0464C0E787 (void);
-// 0x00000047 System.Void BrainCheck.SpeechRecognitionBridge::speechToText()
+// 0x00000055 System.Void BrainCheck.SpeechRecognitionBridge::speechToText()
 extern void SpeechRecognitionBridge_speechToText_m0267DA2129DC47B1311CBFBFE16B8F9C5865755B (void);
-// 0x00000048 System.Void BrainCheck.SpeechRecognitionBridge::speechToTextInHidenModeWithBeepSound()
+// 0x00000056 System.Void BrainCheck.SpeechRecognitionBridge::speechToTextInHidenModeWithBeepSound()
 extern void SpeechRecognitionBridge_speechToTextInHidenModeWithBeepSound_mCA3F4233D7D17E108E3A93D42F2E5D1EB0763EF6 (void);
-// 0x00000049 System.Void BrainCheck.SpeechRecognitionBridge::speechToTextInSilentMode()
+// 0x00000057 System.Void BrainCheck.SpeechRecognitionBridge::speechToTextInSilentMode()
 extern void SpeechRecognitionBridge_speechToTextInSilentMode_m6562E9C6DA179AD5DF4614EF7D064DD03AACAECC (void);
-// 0x0000004A System.Void BrainCheck.SpeechRecognitionBridge::unmuteSpeakers()
+// 0x00000058 System.Void BrainCheck.SpeechRecognitionBridge::unmuteSpeakers()
 extern void SpeechRecognitionBridge_unmuteSpeakers_m90639D8E6C68B55B3E59486A5AF0E8E5BB976671 (void);
-// 0x0000004B System.Void BrainCheck.SpeechRecognitionBridge::setUnityGameObjectNameAndMethodName(System.String,System.String)
+// 0x00000059 System.Void BrainCheck.SpeechRecognitionBridge::setUnityGameObjectNameAndMethodName(System.String,System.String)
 extern void SpeechRecognitionBridge_setUnityGameObjectNameAndMethodName_m31A6B69251174F4478EB24A39E5A54735BD9E920 (void);
-// 0x0000004C System.Void BrainCheck.SpeechRecognitionBridge::.ctor()
+// 0x0000005A System.Void BrainCheck.SpeechRecognitionBridge::.ctor()
 extern void SpeechRecognitionBridge__ctor_m9E03D917E1DF785BBAFAA04BEC03938F35AD856D (void);
-// 0x0000004D System.Void BrainCheck.DemoScript::OnMouseUp()
+// 0x0000005B System.Void BrainCheck.DemoScript::OnMouseUp()
 extern void DemoScript_OnMouseUp_m64BF524B2874C5B3CF23B7F880028209CDF03580 (void);
-// 0x0000004E System.Collections.IEnumerator BrainCheck.DemoScript::BtnAnimation()
+// 0x0000005C System.Collections.IEnumerator BrainCheck.DemoScript::BtnAnimation()
 extern void DemoScript_BtnAnimation_m210FAAE73FFCB4112A3FBC5B4191A5462E5DDD02 (void);
-// 0x0000004F System.Void BrainCheck.DemoScript::ButtonAction()
+// 0x0000005D System.Void BrainCheck.DemoScript::ButtonAction()
 extern void DemoScript_ButtonAction_m91CFD920C6700ADEA9FC265837F94426D7ACD675 (void);
-// 0x00000050 System.Void BrainCheck.DemoScript::.ctor()
+// 0x0000005E System.Void BrainCheck.DemoScript::.ctor()
 extern void DemoScript__ctor_mD55A4FF3F5F8F0CCD815646878311A55EF79780D (void);
-// 0x00000051 System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::.ctor(System.Int32)
+// 0x0000005F System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::.ctor(System.Int32)
 extern void U3CBtnAnimationU3Ed__5__ctor_m30F1AD5AC05AC18755869B75848F91C2607BFFAB (void);
-// 0x00000052 System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::System.IDisposable.Dispose()
+// 0x00000060 System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::System.IDisposable.Dispose()
 extern void U3CBtnAnimationU3Ed__5_System_IDisposable_Dispose_mCE1CE4E123AF14F095330A99358A90223B5DE73E (void);
-// 0x00000053 System.Boolean BrainCheck.DemoScript/<BtnAnimation>d__5::MoveNext()
+// 0x00000061 System.Boolean BrainCheck.DemoScript/<BtnAnimation>d__5::MoveNext()
 extern void U3CBtnAnimationU3Ed__5_MoveNext_mD53D80CCDDDE091FB6E3BD0AE9E3AFD3E8922566 (void);
-// 0x00000054 System.Object BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x00000062 System.Object BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CBtnAnimationU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m402CF565F207D6EE3489B1BD960E27DAF0E42DCE (void);
-// 0x00000055 System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.IEnumerator.Reset()
+// 0x00000063 System.Void BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.IEnumerator.Reset()
 extern void U3CBtnAnimationU3Ed__5_System_Collections_IEnumerator_Reset_mB448A77ED63182069D80F1F18133FB1E30DA7D3C (void);
-// 0x00000056 System.Object BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.IEnumerator.get_Current()
+// 0x00000064 System.Object BrainCheck.DemoScript/<BtnAnimation>d__5::System.Collections.IEnumerator.get_Current()
 extern void U3CBtnAnimationU3Ed__5_System_Collections_IEnumerator_get_Current_mC3C44AC2CE6C76E8B2FACD906A84391E34ECA396 (void);
-// 0x00000057 System.Void BrainCheck.UnityReceiveMessages::Awake()
+// 0x00000065 System.Void BrainCheck.UnityReceiveMessages::Awake()
 extern void UnityReceiveMessages_Awake_m636ABFD692B6BA6ED00DD78BED4F76ED8849C8D1 (void);
-// 0x00000058 System.Void BrainCheck.UnityReceiveMessages::Start()
+// 0x00000066 System.Void BrainCheck.UnityReceiveMessages::Start()
 extern void UnityReceiveMessages_Start_mC542CF8BE621ECA6E3B1C338796E6E10A077E546 (void);
-// 0x00000059 System.Void BrainCheck.UnityReceiveMessages::Update()
+// 0x00000067 System.Void BrainCheck.UnityReceiveMessages::Update()
 extern void UnityReceiveMessages_Update_mDA94E51BFB0826ACAB92AE3EF49429863C475870 (void);
-// 0x0000005A System.Void BrainCheck.UnityReceiveMessages::CallbackMethod(System.String)
+// 0x00000068 System.Void BrainCheck.UnityReceiveMessages::CallbackMethod(System.String)
 extern void UnityReceiveMessages_CallbackMethod_m5E22E1681A5D4143D6ACEF7B7919EB69D99FB434 (void);
-// 0x0000005B System.Void BrainCheck.UnityReceiveMessages::.ctor()
+// 0x00000069 System.Void BrainCheck.UnityReceiveMessages::.ctor()
 extern void UnityReceiveMessages__ctor_m187D645E1D37830CDA1D20D69978CACA37D031DF (void);
-// 0x0000005C System.Void DigitalRuby.LightningBolt.LightningBoltScript::GetPerpendicularVector(UnityEngine.Vector3&,UnityEngine.Vector3&)
+// 0x0000006A System.Void DigitalRuby.LightningBolt.LightningBoltScript::GetPerpendicularVector(UnityEngine.Vector3&,UnityEngine.Vector3&)
 extern void LightningBoltScript_GetPerpendicularVector_m6E14CE8B174161B94706CE092FF3BE4049C53983 (void);
-// 0x0000005D System.Void DigitalRuby.LightningBolt.LightningBoltScript::GenerateLightningBolt(UnityEngine.Vector3,UnityEngine.Vector3,System.Int32,System.Int32,System.Single)
+// 0x0000006B System.Void DigitalRuby.LightningBolt.LightningBoltScript::GenerateLightningBolt(UnityEngine.Vector3,UnityEngine.Vector3,System.Int32,System.Int32,System.Single)
 extern void LightningBoltScript_GenerateLightningBolt_m6F45F784BE0610F9E9B519C5E290D3515DE0BA49 (void);
-// 0x0000005E System.Void DigitalRuby.LightningBolt.LightningBoltScript::RandomVector(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
+// 0x0000006C System.Void DigitalRuby.LightningBolt.LightningBoltScript::RandomVector(UnityEngine.Vector3&,UnityEngine.Vector3&,System.Single,UnityEngine.Vector3&)
 extern void LightningBoltScript_RandomVector_m8D5CB399D3CE0038571D41DE824CE673E766B4FA (void);
-// 0x0000005F System.Void DigitalRuby.LightningBolt.LightningBoltScript::SelectOffsetFromAnimationMode()
+// 0x0000006D System.Void DigitalRuby.LightningBolt.LightningBoltScript::SelectOffsetFromAnimationMode()
 extern void LightningBoltScript_SelectOffsetFromAnimationMode_m98F0C804C05EFB6BC3283AC50D654D5A672B6199 (void);
-// 0x00000060 System.Void DigitalRuby.LightningBolt.LightningBoltScript::UpdateLineRenderer()
+// 0x0000006E System.Void DigitalRuby.LightningBolt.LightningBoltScript::UpdateLineRenderer()
 extern void LightningBoltScript_UpdateLineRenderer_mC709724D71E0E95242108C4B9D6F7DA6BAB71F65 (void);
-// 0x00000061 System.Void DigitalRuby.LightningBolt.LightningBoltScript::Start()
+// 0x0000006F System.Void DigitalRuby.LightningBolt.LightningBoltScript::Start()
 extern void LightningBoltScript_Start_m980C378E5754957B1F4DE221515969B6A328240E (void);
-// 0x00000062 System.Void DigitalRuby.LightningBolt.LightningBoltScript::Update()
+// 0x00000070 System.Void DigitalRuby.LightningBolt.LightningBoltScript::Update()
 extern void LightningBoltScript_Update_m0BE2BF4FB4CD027E8C78FE58991FFF103836AF31 (void);
-// 0x00000063 System.Void DigitalRuby.LightningBolt.LightningBoltScript::Trigger()
+// 0x00000071 System.Void DigitalRuby.LightningBolt.LightningBoltScript::Trigger()
 extern void LightningBoltScript_Trigger_mA1EDB81D4D9001D2B19FFBACB0A36BAFEE96C284 (void);
-// 0x00000064 System.Void DigitalRuby.LightningBolt.LightningBoltScript::UpdateFromMaterialChange()
+// 0x00000072 System.Void DigitalRuby.LightningBolt.LightningBoltScript::UpdateFromMaterialChange()
 extern void LightningBoltScript_UpdateFromMaterialChange_m977EBCF7F3B1B47A777F34B0305C7FC8A04E1EF5 (void);
-// 0x00000065 System.Void DigitalRuby.LightningBolt.LightningBoltScript::.ctor()
+// 0x00000073 System.Void DigitalRuby.LightningBolt.LightningBoltScript::.ctor()
 extern void LightningBoltScript__ctor_m6B404ACF4FA73DFC000CE86270A4409AA1BBDD42 (void);
-static Il2CppMethodPointer s_methodPointers[101] = 
+static Il2CppMethodPointer s_methodPointers[115] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -236,10 +264,21 @@ static Il2CppMethodPointer s_methodPointers[101] =
 	Enemy_Update_m4149CFC3AC081AF0D654D9BDB6BC9B5540CE03D8,
 	Enemy_OnCollisionEnter_mA8E3F644B8068B1BA5496C6AD2E43A65EBA978DB,
 	Enemy__ctor_mB6697627910F785A971C20C671DEFBA9D921D933,
+	EnergyBall_Controller_Start_m6B7BFCBFFE9F469E859D714FC1F0D57F58B7B4D7,
+	EnergyBall_Controller__ctor_m12A265A5030AF3D4F8FDD108C880A0417F9E4444,
+	Fireball_Controller_Start_m80E143915B85DABDA415B28D93675162051C1850,
+	Fireball_Controller_OnParticleCollision_m6BC32CDD4548082B7AC07A1F450DD0F6D92C51CB,
+	Fireball_Controller__ctor_mC56EF7C1424A424E94587F24E5070AD3CD0F4BAC,
+	Flamethrower_Controller_Start_m06AC7649490362D7993994B8542E033D4406F3EC,
+	Flamethrower_Controller__ctor_mD2CD174AED2C1703DAAEE79A9CDB5FEE5E154117,
 	Ghoul_Start_m9993A5388BCE161825471078E3DB434BBF6CA556,
 	Ghoul_Update_mC96FD17EF1C78643867E8F1CD48BF03F96DFEE12,
 	Ghoul_OnCollisionEnter_m3B01F2D6CA680F34B4069637E796302DFC90A542,
 	Ghoul__ctor_mA673771558EE8B05B7EDFCBF2B70E231CA41B190,
+	NavigationBaker_Start_m0475BE8421CEB29696195846DAE3AD17ACC226E2,
+	NavigationBaker_Update_m647E8D45CF2FB5EDC10662BA1164B00DF74EEDC7,
+	NavigationBaker__ctor_m61CA349A592C2057F86B9FE91B8CEFAEAB2D2E45,
+	PlaceObject_Start_mE0F46F0353CD0065F35D9EEF88BF361EE12DD951,
 	PlaceObject_Update_mE52445879BBA344DEBFEDBF6CF23FEE92A059358,
 	PlaceObject_Awake_mD6993E74BE76ED7E3B9AAA189F1B37638B7D2E70,
 	PlaceObject_OnEnable_mB3104C829382C28FD236E0635DD37DC931A2F3EC,
@@ -261,6 +300,7 @@ static Il2CppMethodPointer s_methodPointers[101] =
 	Zombie_Start_m478D7F11289A1F406964DA248134532441D4E52E,
 	Zombie_Update_mB7E693A8605FDC1236C6FD956989A0454234B0F3,
 	Zombie_OnCollisionEnter_m791922AAEAC2327576775C67F34643260100406B,
+	Zombie_OnParticleCollision_m011041B1CF26A869BBB794D0615C9363398D35FF,
 	Zombie__ctor_m3CA658C4BC347F71B7C6F90172F19865934C9D31,
 	V_SMC_Camera_Start_m042D7339C7EEC60EE95207A6D609899101D45C2C,
 	V_SMC_Camera_Update_m5A20B03D75E774E4ECAC49DBA2F39D54126BBC03,
@@ -277,6 +317,8 @@ static Il2CppMethodPointer s_methodPointers[101] =
 	Listener_startListening_m10E63A551FF8A23E10C87DE44DC23725C6A17978,
 	Listener_tempShootFunction_mABCD98E8383239AD248D0F7649175F2C6CF36AC3,
 	Listener__ctor_mE9DDEC9431D28F3493756F0E3F47FA520540EFE8,
+	Shoot_Start_mF25A91B2CD53E93632C458EFD4ED52FF68F57791,
+	Shoot_Update_mF8445D1D88C6C251A543B67FEF02DF16EE5FFD94,
 	Shoot_Awake_m0DB64BED598C905B36D7234B0C094DA425635CEB,
 	Shoot_CallbackMethod_mA7A829982E8A013DA52C13042F38C773BEE8FD9A,
 	Shoot_fireAbility_m41AB79FE96CAE4477EC3E70972B0935B482310D6,
@@ -318,115 +360,129 @@ static Il2CppMethodPointer s_methodPointers[101] =
 	LightningBoltScript_UpdateFromMaterialChange_m977EBCF7F3B1B47A777F34B0305C7FC8A04E1EF5,
 	LightningBoltScript__ctor_m6B404ACF4FA73DFC000CE86270A4409AA1BBDD42,
 };
-static const int32_t s_InvokerIndices[101] = 
+static const int32_t s_InvokerIndices[115] = 
 {
-	5414,
-	4387,
-	5520,
-	5520,
-	5520,
-	5520,
-	8674,
-	5456,
-	4421,
-	5520,
-	5520,
-	5520,
-	4273,
-	4387,
-	5520,
-	8674,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	5520,
-	5325,
-	5520,
-	5520,
-	5520,
-	5520,
-	4387,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	4300,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	4387,
-	4387,
-	5520,
-	8635,
-	8674,
-	8674,
-	8674,
-	7837,
-	8674,
-	8674,
-	8674,
-	8674,
-	7842,
-	5520,
-	5520,
-	5414,
-	5520,
-	5520,
-	4361,
-	5520,
-	5325,
-	5414,
-	5520,
-	5414,
-	5520,
-	5520,
-	5520,
-	4387,
-	5520,
-	1848,
-	412,
-	706,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
-	5520,
+	5514,
+	4436,
+	5621,
+	5621,
+	5621,
+	5621,
+	8798,
+	5556,
+	4470,
+	5621,
+	5621,
+	5621,
+	4320,
+	4436,
+	5621,
+	8798,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	4436,
+	5621,
+	5621,
+	5621,
+	5422,
+	5621,
+	5621,
+	5621,
+	5621,
+	4436,
+	4436,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	4347,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	4436,
+	4436,
+	5621,
+	8759,
+	8798,
+	8798,
+	8798,
+	7960,
+	8798,
+	8798,
+	8798,
+	8798,
+	7965,
+	5621,
+	5621,
+	5514,
+	5621,
+	5621,
+	4408,
+	5621,
+	5422,
+	5514,
+	5621,
+	5514,
+	5621,
+	5621,
+	5621,
+	4436,
+	5621,
+	1868,
+	414,
+	713,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
+	5621,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	101,
+	115,
 	s_methodPointers,
 	0,
 	NULL,

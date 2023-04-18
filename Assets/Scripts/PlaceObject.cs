@@ -9,16 +9,35 @@ using UnityEngine.EventSystems;
 
 public class PlaceObject : MonoBehaviour
 {
-     [SerializeField]
+    [SerializeField]
     private GameObject prefab;
 
     private ARRaycastManager aRRaycastManager;
     private ARPlaneManager aRPlaneManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>();
 
+    private bool overUI;
+    
+    void Start()
+    {
+        overUI = false;
+    }
+
     void Update()
     {
-
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            //touched the UI
+            if (EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId))
+            {
+                overUI = true;
+            }
+            //not over UI
+            else
+            {
+                overUI = false;
+            }
+        }
     }
 
     private void Awake()
@@ -54,10 +73,10 @@ public class PlaceObject : MonoBehaviour
             foreach(ARRaycastHit hit in hits)
             {
                 Pose pose = hit.pose;
+                //Debug.Log(!EventSystem.current.IsPointerOverGameObject(Input.GetTouch(0).fingerId));
                 //pass the hit into event system to check if UI
-                //!EventSystem.current.IsPointerOverGameObject(pose)... maybe. i'll try
                 //check if it is the ground and not the ceiling
-                if (aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp)
+                if (aRPlaneManager.GetPlane(hit.trackableId).alignment == PlaneAlignment.HorizontalUp && !overUI)
                 {
                     //check if too many are already placed
 
