@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Zombie : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Zombie : MonoBehaviour
     private float aggroRange;
     private Animator animator;
     private bool isZombieDead;
+    public TMP_Text currentScore;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class Zombie : MonoBehaviour
         aggroRange = 1.3f;
         moveSpeed = 0.007f;
         isZombieDead = false;
+        currentScore = GameObject.Find("Score").GetComponent<TMP_Text>();
     }
 
     // Update is called once per frame
@@ -64,10 +67,11 @@ public class Zombie : MonoBehaviour
     {
         if(other.tag == "Projectile")
         {
-            Debug.Log("ICe");
             animator.SetBool("isDeadZombie", true);
             isZombieDead = true;
             Destroy(this.gameObject, 1.5f);
+            int score = int.Parse(currentScore.text) + 1;
+            currentScore.text = score.ToString();
         }
     }
 }

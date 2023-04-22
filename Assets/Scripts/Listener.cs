@@ -11,12 +11,12 @@ namespace BrainCheck
     {
         string gameObjectName = "Shoot";
         string statusMethodName = "CallbackMethod";
+        public TMP_Text isRecordingText;
 
         public GameObject camera;
         public GameObject projectile;
         private GameObject newProjectile;
         public float shootForce;
-        public TMP_Text isRecordingText;
         private bool hasShot;
         private string currentProjectile;
 
@@ -36,10 +36,10 @@ namespace BrainCheck
 
         void Update()
         {
-            if (hasShot && GameObject.Find("Flamethrower(Clone)") != null)
+            if(hasShot && GameObject.Find("Flamethrower(Clone)") != null)
             {
-                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.2f);
-                newProjectile.transform.rotation = camera.transform.rotation;
+                newProjectile.transform.position = new Vector3(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.y, GetComponent<Camera>().transform.position.z + 0.2f);
+                newProjectile.transform.rotation = GetComponent<Camera>().transform.rotation;
             }
             else
             {
