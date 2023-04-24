@@ -11,6 +11,7 @@ public class Zombie : MonoBehaviour
     private Animator animator;
     private bool isZombieDead;
     public TMP_Text currentScore;
+    private bool addedScore;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class Zombie : MonoBehaviour
         moveSpeed = 0.007f;
         isZombieDead = false;
         currentScore = GameObject.Find("Score").GetComponent<TMP_Text>();
+        addedScore = false;
     }
 
     // Update is called once per frame
@@ -70,8 +72,12 @@ public class Zombie : MonoBehaviour
             animator.SetBool("isDeadZombie", true);
             isZombieDead = true;
             Destroy(this.gameObject, 1.5f);
-            int score = int.Parse(currentScore.text) + 1;
-            currentScore.text = score.ToString();
+            if (!addedScore)
+            {
+                addedScore = true;
+                int score = int.Parse(currentScore.text) + 1;
+                currentScore.text = score.ToString();
+            }
         }
     }
 }

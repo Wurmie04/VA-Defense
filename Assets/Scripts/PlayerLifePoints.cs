@@ -6,18 +6,20 @@ using UnityEngine.UI;
 
 public class PlayerLifePoints : MonoBehaviour
 {
-    public TMP_Text lifePointsText;
+    //public TMP_Text lifePointsText;
     int lifePoints;
     public GameObject UI;
     public Button unPausebutton;
     private List<int> highestScores = new List<int>();
     public TMP_Text currentScore;
     public TMP_Text highScores;
+    public Slider healthSlider;
 
     // Start is called before the first frame update
     void Start()
     {
         lifePoints = 50;
+        healthSlider.value = lifePoints;
         currentScore = GameObject.Find("Score").GetComponent<TMP_Text>();
         //UI.setActive(false);
 
@@ -33,7 +35,7 @@ public class PlayerLifePoints : MonoBehaviour
     {
         if(lifePoints == 0)
         {
-            lifePointsText.text = "Game Over";
+            //lifePointsText.text = "Game Over";
             //pause game
             //turn pause screen on
             //save the score
@@ -64,7 +66,8 @@ public class PlayerLifePoints : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" && lifePoints > 0)
         {
             lifePoints -= 1;
-            lifePointsText.text = "Life Points: " + lifePoints.ToString();
+            healthSlider.value = lifePoints;
+            //lifePointsText.text = "Life Points: " + lifePoints.ToString();
             //Destroy(this.gameObject, 1.5f);
         }
     }

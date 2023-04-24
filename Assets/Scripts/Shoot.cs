@@ -40,7 +40,7 @@ namespace BrainCheck
             //if projectile is flamethrower, update its spawn point because it is a constant ability
             else if(currentProjectile == "flamethrower")
             {
-                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.2f);
+                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.61f);
                 newProjectile.transform.rotation = camera.transform.rotation;
             }
             else
@@ -95,7 +95,7 @@ namespace BrainCheck
                 {
                     isRecordingText.text = messages;
                     shootForce = 1000;
-                    newProjectile = (GameObject)Instantiate(flamethrower_Projectile, camera.transform.position + new Vector3(0, 0, 0.2f), camera.transform.rotation);
+                    newProjectile = (GameObject)Instantiate(flamethrower_Projectile, camera.transform.position + new Vector3(0, 0, 0.61f), camera.transform.rotation);
                     newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
                     currentProjectile = "flamethrower";
 

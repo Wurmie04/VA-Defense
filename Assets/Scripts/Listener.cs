@@ -38,8 +38,8 @@ namespace BrainCheck
         {
             if(hasShot && GameObject.Find("Flamethrower(Clone)") != null)
             {
-                newProjectile.transform.position = new Vector3(GetComponent<Camera>().transform.position.x, GetComponent<Camera>().transform.position.y, GetComponent<Camera>().transform.position.z + 0.2f);
-                newProjectile.transform.rotation = GetComponent<Camera>().transform.rotation;
+                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.61f);
+                newProjectile.transform.rotation = camera.transform.rotation;
             }
             else
             {
@@ -60,11 +60,9 @@ namespace BrainCheck
         {
             if (currentProjectile == "none")
             {
-                newProjectile = (GameObject)Instantiate(projectile, camera.transform.position + new Vector3(0, 0, 0.2f), camera.transform.rotation);
+                newProjectile = (GameObject)Instantiate(projectile, camera.transform.position + new Vector3(0, 0, 0.61f), camera.transform.rotation);
                 hasShot = true;
-                //newProjectile.transform.Rotate(0, 90, 0);
                 newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
-                currentProjectile = "flamethrower";
             }
             
         }

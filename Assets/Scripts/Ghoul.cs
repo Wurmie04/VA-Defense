@@ -10,6 +10,7 @@ public class Ghoul : MonoBehaviour
     private float aggroRange;
     private bool isDead;
     public TMP_Text currentScore;
+    private bool scoreAdded;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class Ghoul : MonoBehaviour
         moveSpeed = 0.005f;
         isDead = false;
         currentScore = GameObject.Find("Score").GetComponent<TMP_Text>();
+        scoreAdded = false;
     }
 
     // Update is called once per frame
@@ -54,16 +56,13 @@ public class Ghoul : MonoBehaviour
     {
         if (collision.gameObject.tag == "Projectile")
         {
+            Debug.Log("here");
             GetComponent<Animation>().Play("Death");
             isDead = true;  
             //Destroy(collision.gameObject);
             Destroy(this.gameObject, 1.1f);
 
         }
-        /*if(collision.gameObject.tag == "MainCamera")
-        {
-            Debug.Log("Arms hit");
-        }*/
     }
     private void OnParticleCollision(GameObject other)
     {
@@ -72,9 +71,13 @@ public class Ghoul : MonoBehaviour
             GetComponent<Animation>().Play("Death");
             isDead = true;
             //Destroy(collision.gameObject);
-            Destroy(this.gameObject, 1.1f);
-            int score = int.Parse(currentScore.text) + 1;
-            currentScore.text = score.ToString();
+            Destroy(this.gameObject, 1.0f);
+            if (!scoreAdded)
+            {
+                scoreAdded = true;
+                int score = int.Parse(currentScore.text) + 1;
+                currentScore.text = score.ToString();
+            }
         }
     }
 }
