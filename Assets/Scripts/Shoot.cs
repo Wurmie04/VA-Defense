@@ -40,7 +40,7 @@ namespace BrainCheck
             //if projectile is flamethrower, update its spawn point because it is a constant ability
             else if(currentProjectile == "flamethrower")
             {
-                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.61f);
+                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0f);
                 newProjectile.transform.rotation = camera.transform.rotation;
             }
             else
@@ -72,14 +72,6 @@ namespace BrainCheck
         //fires the ability that was said in final string
         public void fireAbility(string messages)
         {
-            //isRecordingText.text = newMessage;
-            /*if (messages.Contains("shoot"))
-            {
-                shootForce = 700;
-                GameObject newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
-                //newProjectile.transform.Rotate(0, 90, 0);
-                newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
-            }*/
             messages = messages.ToLower();
             //can only shoot if there isn't already a projectile in the scene
             if (currentProjectile == "none")
@@ -87,24 +79,21 @@ namespace BrainCheck
                 if (messages.Contains("fireball"))
                 {
                     shootForce = 700;
-                    newProjectile = (GameObject)Instantiate(fireball_Projectile, camera.transform.position, camera.transform.rotation);
+                    newProjectile = (GameObject)Instantiate(fireball_Projectile, camera.transform.position + new Vector3(0, 0, 0f), camera.transform.rotation);
                     newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
                     currentProjectile = "fireball";
                 }
                 else if (messages.Contains("flamethrower"))
                 {
-                    isRecordingText.text = messages;
-                    shootForce = 1000;
-                    newProjectile = (GameObject)Instantiate(flamethrower_Projectile, camera.transform.position + new Vector3(0, 0, 0.61f), camera.transform.rotation);
+                    newProjectile = (GameObject)Instantiate(flamethrower_Projectile, camera.transform.position + new Vector3(0, 0, 0f), camera.transform.rotation);
                     newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
                     currentProjectile = "flamethrower";
 
                 }
                 else if (messages.Contains("energy ball"))
                 {
-                    isRecordingText.text = messages;
-                    shootForce = 100;
-                    newProjectile = (GameObject)Instantiate(EnergyBall_Projectile, camera.transform.position, camera.transform.rotation);
+                    shootForce = 30000;
+                    newProjectile = (GameObject)Instantiate(EnergyBall_Projectile, camera.transform.position + new Vector3(0, 0, 0f), camera.transform.rotation);
                     newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
                     currentProjectile = "energy ball";
                 }

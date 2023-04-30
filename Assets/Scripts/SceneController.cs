@@ -8,16 +8,18 @@ public class SceneController : MonoBehaviour
 {
     public TMP_Text highScores;
     public GameObject UI;
+    private List<int> highestScores = new List<int>();
+    public TMP_Text currentScore;
 
     // Start is called before the first frame update
     void Start()
     {
         UI.SetActive(false);
-        /*PlayerPrefs.SetInt("Score 0", 10);
-        PlayerPrefs.SetInt("Score 1", 7);
-        PlayerPrefs.SetInt("Score 2", 5);
-        PlayerPrefs.SetInt("Score 3", 3);
-        PlayerPrefs.SetInt("Score 4", 1);*/
+        highestScores.Add(PlayerPrefs.GetInt("Score 0", 10));
+        highestScores.Add(PlayerPrefs.GetInt("Score 1", 8));
+        highestScores.Add(PlayerPrefs.GetInt("Score 2", 7));
+        highestScores.Add(PlayerPrefs.GetInt("Score 3", 6));
+        highestScores.Add(PlayerPrefs.GetInt("Score 4", 5));
     }
 
     // Update is called once per frame
@@ -28,7 +30,9 @@ public class SceneController : MonoBehaviour
 
     public void Restart()
     {
+        compareScores(int.Parse(currentScore.text));
         SceneManager.LoadScene("VA Defense");
+        Time.timeScale = 1;
     }
 
     public void Pause()
@@ -44,5 +48,17 @@ public class SceneController : MonoBehaviour
     {
         Time.timeScale = 1;
         UI.SetActive(false);
+    }
+
+    private void compareScores(int finalScore)
+    {
+        highestScores.Add(finalScore);
+        highestScores.Sort();
+        highestScores.Reverse();
+        for (int i = 0; i < 5; i++)
+        {
+            PlayerPrefs.SetInt("Score " + i, highestScores[i]);
+            PlayerPrefs.Save();
+        }
     }
 }

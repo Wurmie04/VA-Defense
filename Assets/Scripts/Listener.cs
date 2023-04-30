@@ -38,7 +38,7 @@ namespace BrainCheck
         {
             if(hasShot && GameObject.Find("Flamethrower(Clone)") != null)
             {
-                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z + 0.61f);
+                newProjectile.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y, camera.transform.position.z);
                 newProjectile.transform.rotation = camera.transform.rotation;
             }
             else
@@ -53,14 +53,18 @@ namespace BrainCheck
         {
             BrainCheck.SpeechRecognitionBridge.speechToTextInHidenModeWithBeepSound();
             //BrainCheck.SpeechRecognitionBridge.speechToText();
-            isRecordingText.text = "Recording";
+            if (GameObject.Find("Flamethrower(Clone)") == null && GameObject.Find("Fireball(Clone)") == null && GameObject.Find("EnergyBall(Clone)") == null)
+            {
+                isRecordingText.text = "Recording";
+            }
         }
 
         public void tempShootFunction()
         {
             if (currentProjectile == "none")
             {
-                newProjectile = (GameObject)Instantiate(projectile, camera.transform.position + new Vector3(0, 0, 0.61f), camera.transform.rotation);
+                currentProjectile = "flamethrower";
+                newProjectile = (GameObject)Instantiate(projectile, camera.transform.position, camera.transform.rotation);
                 hasShot = true;
                 newProjectile.GetComponent<Rigidbody>().AddForce(camera.transform.forward * shootForce);
             }

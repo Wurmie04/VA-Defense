@@ -33,7 +33,7 @@ public class Ghoul : MonoBehaviour
         //if the distance is further than the aggro range, don't attack and move towards player
         if (!isDead)
         {
-            if (distanceFromPlayer >= aggroRange)
+            if (distanceFromPlayer >= aggroRange && GameObject.Find("Pause/RestartUI") == null)
             {
                 //enemy will face and walk towards camera
                 transform.position = Vector3.Lerp(transform.position, target.transform.position, moveSpeed);

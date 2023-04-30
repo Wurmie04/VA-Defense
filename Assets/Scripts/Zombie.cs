@@ -36,7 +36,7 @@ public class Zombie : MonoBehaviour
             float distanceFromPlayer = Vector3.Distance(this.transform.position, target.transform.position);
 
             //if the distance is further than the aggro range, don't attack and move towards player
-            if (distanceFromPlayer >= aggroRange)
+            if (distanceFromPlayer >= aggroRange && GameObject.Find("Pause/RestartUI") == null)
             {
                 //enemy will face and walk towards camera
                 transform.position = Vector3.Lerp(transform.position, target.transform.position, moveSpeed);
@@ -62,7 +62,13 @@ public class Zombie : MonoBehaviour
         {
             animator.SetBool("isDeadZombie", true);
             isZombieDead = true;
-            Destroy(this.gameObject,1.5f);
+            Destroy(this.gameObject, 1.5f);
+            if (!addedScore)
+            {
+                addedScore = true;
+                int score = int.Parse(currentScore.text) + 1;
+                currentScore.text = score.ToString();
+            }
         }
     }
     private void OnParticleCollision(GameObject other)

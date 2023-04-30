@@ -23,11 +23,11 @@ public class PlayerLifePoints : MonoBehaviour
         currentScore = GameObject.Find("Score").GetComponent<TMP_Text>();
         //UI.setActive(false);
 
-        highestScores.Add(PlayerPrefs.GetInt("Score 0", 0));
-        highestScores.Add(PlayerPrefs.GetInt("Score 1", 0));
-        highestScores.Add(PlayerPrefs.GetInt("Score 2", 0));
-        highestScores.Add(PlayerPrefs.GetInt("Score 3", 0));
-        highestScores.Add(PlayerPrefs.GetInt("Score 4", 0));
+        highestScores.Add(PlayerPrefs.GetInt("Score 0", 10));
+        highestScores.Add(PlayerPrefs.GetInt("Score 1", 8));
+        highestScores.Add(PlayerPrefs.GetInt("Score 2", 7));
+        highestScores.Add(PlayerPrefs.GetInt("Score 3", 6));
+        highestScores.Add(PlayerPrefs.GetInt("Score 4", 5));
     }
 
     // Update is called once per frame
@@ -35,13 +35,13 @@ public class PlayerLifePoints : MonoBehaviour
     {
         if(lifePoints == 0)
         {
-            //lifePointsText.text = "Game Over";
             //pause game
             //turn pause screen on
             //save the score
             UI.SetActive(true);
             unPausebutton.enabled = false;
             lifePoints--;
+            currentScore.text = "Game Over";
             compareScores(int.Parse(currentScore.text));
             Time.timeScale = 0;
             highScores.text = PlayerPrefs.GetInt("Score 0", 0) + "\n" + PlayerPrefs.GetInt("Score 1", 0) + "\n"
@@ -58,6 +58,7 @@ public class PlayerLifePoints : MonoBehaviour
         for(int i = 0; i < 5;i++)
         {
             PlayerPrefs.SetInt("Score " + i, highestScores[i]);
+            PlayerPrefs.Save();
         }
     }
 
@@ -67,8 +68,6 @@ public class PlayerLifePoints : MonoBehaviour
         {
             lifePoints -= 1;
             healthSlider.value = lifePoints;
-            //lifePointsText.text = "Life Points: " + lifePoints.ToString();
-            //Destroy(this.gameObject, 1.5f);
         }
     }
 }
