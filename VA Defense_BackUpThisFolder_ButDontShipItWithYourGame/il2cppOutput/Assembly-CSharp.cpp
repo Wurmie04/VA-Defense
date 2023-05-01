@@ -469,7 +469,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralEA76407FB3F262D16FA7B54F0E8128D2AA07645E
 IL2CPP_EXTERN_C String_t* _stringLiteralF0E3F3145F8ED443E2D527929A09807233E204F6;
 IL2CPP_EXTERN_C String_t* _stringLiteralF153F8CCDC8FC4F88A28E06A09C135899E1C48C2;
 IL2CPP_EXTERN_C String_t* _stringLiteralF36587FC5C72938C8B6A0676310C770BD590D54C;
-IL2CPP_EXTERN_C String_t* _stringLiteralF984C9674EDCA2C39EFAD66081B054F073C3815B;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA862F66D6FCC1E5F8580D4BC9EFE58534C15A81;
 IL2CPP_EXTERN_C const RuntimeMethod* ARFeatheredPlaneMeshVisualizer_ARPlane_boundaryUpdated_mB3D9BBD14EA1FE3ECDBACC2DB89C1B110B8B6B5F_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var;
@@ -6933,7 +6932,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerLifePoints_Update_mF2AA45EDAACCFFF
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE6740E949933182C2172BDE1F3D2C777F0AD7204);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF0E3F3145F8ED443E2D527929A09807233E204F6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF153F8CCDC8FC4F88A28E06A09C135899E1C48C2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF984C9674EDCA2C39EFAD66081B054F073C3815B);
 		s_Il2CppMethodInitialized = true;
 	}
 	bool V_0 = false;
@@ -6945,7 +6943,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerLifePoints_Update_mF2AA45EDAACCFFF
 		bool L_1 = V_0;
 		if (!L_1)
 		{
-			goto IL_0114;
+			goto IL_0103;
 		}
 	}
 	{
@@ -6960,93 +6958,89 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerLifePoints_Update_mF2AA45EDAACCFFF
 		// lifePoints--;
 		int32_t L_4 = __this->___lifePoints_4;
 		__this->___lifePoints_4 = ((int32_t)il2cpp_codegen_subtract(L_4, 1));
-		// currentScore.text = "Game Over";
+		// compareScores(int.Parse(currentScore.text));
 		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_5 = __this->___currentScore_8;
 		NullCheck(L_5);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_5, _stringLiteralF984C9674EDCA2C39EFAD66081B054F073C3815B);
-		// compareScores(int.Parse(currentScore.text));
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___currentScore_8;
-		NullCheck(L_6);
-		String_t* L_7;
-		L_7 = VirtualFuncInvoker0< String_t* >::Invoke(65 /* System.String TMPro.TMP_Text::get_text() */, L_6);
-		int32_t L_8;
-		L_8 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_7, NULL);
-		PlayerLifePoints_compareScores_m6656E5CDDA70DF979B47A1AF0F88918FD416538C(__this, L_8, NULL);
+		String_t* L_6;
+		L_6 = VirtualFuncInvoker0< String_t* >::Invoke(65 /* System.String TMPro.TMP_Text::get_text() */, L_5);
+		int32_t L_7;
+		L_7 = Int32_Parse_m273CA1A9C7717C99641291A95C543711C0202AF0(L_6, NULL);
+		PlayerLifePoints_compareScores_m6656E5CDDA70DF979B47A1AF0F88918FD416538C(__this, L_7, NULL);
 		// Time.timeScale = 0;
 		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
 		// highScores.text = PlayerPrefs.GetInt("Score 0", 0) + "\n" + PlayerPrefs.GetInt("Score 1", 0) + "\n"
 		// + PlayerPrefs.GetInt("Score 2", 0) + "\n" + PlayerPrefs.GetInt("Score 3", 0) + "\n"
 		// + PlayerPrefs.GetInt("Score 4", 0);
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_9 = __this->___highScores_9;
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_11 = L_10;
-		int32_t L_12;
-		L_12 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral4E2DB0138FFB4A52EA23958E21187439898546B0, 0, NULL);
-		V_1 = L_12;
-		String_t* L_13;
-		L_13 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		NullCheck(L_11);
-		ArrayElementTypeCheck (L_11, L_13);
-		(L_11)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_13);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_11;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_8 = __this->___highScores_9;
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_9 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)((int32_t)9));
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_10 = L_9;
+		int32_t L_11;
+		L_11 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral4E2DB0138FFB4A52EA23958E21187439898546B0, 0, NULL);
+		V_1 = L_11;
+		String_t* L_12;
+		L_12 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
+		NullCheck(L_10);
+		ArrayElementTypeCheck (L_10, L_12);
+		(L_10)->SetAt(static_cast<il2cpp_array_size_t>(0), (String_t*)L_12);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_13 = L_10;
+		NullCheck(L_13);
+		ArrayElementTypeCheck (L_13, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		(L_13)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_14 = L_13;
+		int32_t L_15;
+		L_15 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral4394AF52ADF2A0A9C310FE6829516619C8D7353E, 0, NULL);
+		V_1 = L_15;
+		String_t* L_16;
+		L_16 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		NullCheck(L_14);
-		ArrayElementTypeCheck (L_14, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(1), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_15 = L_14;
-		int32_t L_16;
-		L_16 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteral4394AF52ADF2A0A9C310FE6829516619C8D7353E, 0, NULL);
-		V_1 = L_16;
-		String_t* L_17;
-		L_17 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		NullCheck(L_15);
-		ArrayElementTypeCheck (L_15, L_17);
-		(L_15)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_17);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = L_15;
+		ArrayElementTypeCheck (L_14, L_16);
+		(L_14)->SetAt(static_cast<il2cpp_array_size_t>(2), (String_t*)L_16);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_17 = L_14;
+		NullCheck(L_17);
+		ArrayElementTypeCheck (L_17, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		(L_17)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_18 = L_17;
+		int32_t L_19;
+		L_19 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralE6740E949933182C2172BDE1F3D2C777F0AD7204, 0, NULL);
+		V_1 = L_19;
+		String_t* L_20;
+		L_20 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		NullCheck(L_18);
-		ArrayElementTypeCheck (L_18, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(3), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_19 = L_18;
-		int32_t L_20;
-		L_20 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralE6740E949933182C2172BDE1F3D2C777F0AD7204, 0, NULL);
-		V_1 = L_20;
-		String_t* L_21;
-		L_21 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		NullCheck(L_19);
-		ArrayElementTypeCheck (L_19, L_21);
-		(L_19)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_21);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_19;
+		ArrayElementTypeCheck (L_18, L_20);
+		(L_18)->SetAt(static_cast<il2cpp_array_size_t>(4), (String_t*)L_20);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_21 = L_18;
+		NullCheck(L_21);
+		ArrayElementTypeCheck (L_21, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		(L_21)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_22 = L_21;
+		int32_t L_23;
+		L_23 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralF153F8CCDC8FC4F88A28E06A09C135899E1C48C2, 0, NULL);
+		V_1 = L_23;
+		String_t* L_24;
+		L_24 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		NullCheck(L_22);
-		ArrayElementTypeCheck (L_22, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(5), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_23 = L_22;
-		int32_t L_24;
-		L_24 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralF153F8CCDC8FC4F88A28E06A09C135899E1C48C2, 0, NULL);
-		V_1 = L_24;
-		String_t* L_25;
-		L_25 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		NullCheck(L_23);
-		ArrayElementTypeCheck (L_23, L_25);
-		(L_23)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_25);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = L_23;
+		ArrayElementTypeCheck (L_22, L_24);
+		(L_22)->SetAt(static_cast<il2cpp_array_size_t>(6), (String_t*)L_24);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_25 = L_22;
+		NullCheck(L_25);
+		ArrayElementTypeCheck (L_25, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		(L_25)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
+		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_26 = L_25;
+		int32_t L_27;
+		L_27 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralF0E3F3145F8ED443E2D527929A09807233E204F6, 0, NULL);
+		V_1 = L_27;
+		String_t* L_28;
+		L_28 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
 		NullCheck(L_26);
-		ArrayElementTypeCheck (L_26, _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(7), (String_t*)_stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD);
-		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = L_26;
-		int32_t L_28;
-		L_28 = PlayerPrefs_GetInt_m8AD1FA8BA54CC6CE2B2AEEE36B6D75587BB1692D(_stringLiteralF0E3F3145F8ED443E2D527929A09807233E204F6, 0, NULL);
-		V_1 = L_28;
+		ArrayElementTypeCheck (L_26, L_28);
+		(L_26)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_28);
 		String_t* L_29;
-		L_29 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5((&V_1), NULL);
-		NullCheck(L_27);
-		ArrayElementTypeCheck (L_27, L_29);
-		(L_27)->SetAt(static_cast<il2cpp_array_size_t>(8), (String_t*)L_29);
-		String_t* L_30;
-		L_30 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_27, NULL);
-		NullCheck(L_9);
-		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_9, L_30);
+		L_29 = String_Concat_m647EBF831F54B6DF7D5AFA5FD012CF4EE7571B6A(L_26, NULL);
+		NullCheck(L_8);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_8, L_29);
 	}
 
-IL_0114:
+IL_0103:
 	{
 		// }
 		return;

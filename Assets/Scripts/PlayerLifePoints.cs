@@ -41,7 +41,7 @@ public class PlayerLifePoints : MonoBehaviour
             UI.SetActive(true);
             unPausebutton.enabled = false;
             lifePoints--;
-            currentScore.text = "Game Over";
+            //currentScore.text = "Game Over";
             compareScores(int.Parse(currentScore.text));
             Time.timeScale = 0;
             highScores.text = PlayerPrefs.GetInt("Score 0", 0) + "\n" + PlayerPrefs.GetInt("Score 1", 0) + "\n"
